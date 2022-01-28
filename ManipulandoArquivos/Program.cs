@@ -9,20 +9,26 @@ namespace ManipulandoArquivos
         static void Main(string[] args)
         {
             var caminho = "C:\\TrabalhandoComArquivos";
-
+            var caminhoArquivo = Path.Combine(caminho, "Arquivo-Teste.txt");
+            //var caminhoPathCombine = Path.Combine(caminho, "Pasta Teste 1" );
+            
             FileHelper helper = new FileHelper();
 
- CriarDiretorio
             // helper.ListarDiretorio(caminho);
 
-            var caminhoPathCombine = Path.Combine(caminho, "Pasta Teste 3", "SubPastaTeste3");
+            //var caminhoPathCombine = Path.Combine(caminho, "Pasta Teste 3", "SubPastaTeste3");
 
-            Console.WriteLine("Criando Diretório: " + caminhoPathCombine);
-            
-            helper.CriarDiretorio(caminhoPathCombine);
-          
-            helper.ListarAquivos(caminho);
- master
+            //Console.WriteLine("Criando Diretório: " + caminhoPathCombine);
+
+            //helper.CriarDiretorio(caminhoPathCombine);
+
+            //helper.ListarAquivos(caminho);
+
+            helper.CriarArquivoTexto(caminhoArquivo, "Olá! Teste de escrita de arquivo. ");
+
+
+
+
         }
     }
 }

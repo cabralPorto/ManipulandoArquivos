@@ -31,5 +31,13 @@ namespace ManipulandoArquivos.Helper
             Console.WriteLine(retorno.FullName);
            
         }
+        public void CriarArquivoTexto(string caminho, string conteudo )
+        {   
+            if (!File.Exists(caminho))
+            {
+                File.WriteAllText(caminho, conteudo);
+            }
+                
+        }
     }
 }
