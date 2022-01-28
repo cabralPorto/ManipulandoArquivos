@@ -11,7 +11,9 @@ namespace ManipulandoArquivos
 
             FileHelper helper = new FileHelper();
 
-            helper.ListarDiretorio(caminho);
+            //helper.ListarDiretorio(caminho);
+
+            helper.ListarAquivos(caminho);
         }
     }
 }
