@@ -30,8 +30,11 @@ namespace ManipulandoArquivos
 
             //helper.CriarArquivoTexto(caminhoArquivo, "Olá! Teste de escrita de arquivo. ");
 
-            helper.CriarArquivoTextoStream(caminhoArquivo, ListaString);
-            helper.AdcionarTextoStream(caminhoArquivo, ListaStringContinuacao);
+            //helper.CriarArquivoTextoStream(caminhoArquivo, ListaString);
+
+            //helper.AdcionarTextoStream(caminhoArquivo, ListaStringContinuacao);
+
+            helper.LerArquivoStream(caminhoArquivo);
 
 
 
