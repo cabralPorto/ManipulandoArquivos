@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace ManipulandoArquivos.Helper
@@ -38,6 +39,17 @@ namespace ManipulandoArquivos.Helper
                 File.WriteAllText(caminho, conteudo);
             }
                 
+        }
+
+        public void CriarArquivoTextoStream( string caminho, List<string> conteudo)
+        {
+            using ( var stream = File.CreateText(caminho))
+            {
+                foreach (var linha  in conteudo)
+                {
+                    stream.WriteLine(linha);
+                }
+            }
         }
     }
 }
