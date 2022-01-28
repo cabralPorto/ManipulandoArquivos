@@ -14,6 +14,7 @@ namespace ManipulandoArquivos.Helper
                 Console.WriteLine(retorno);
             }
         }
+ CriarDiretorio
 
         public void CriarDiretorio(string caminho)
         {
@@ -22,5 +23,17 @@ namespace ManipulandoArquivos.Helper
             Console.WriteLine(retorno.FullName);
            
         }
+
+        public void ListarAquivos(string caminho)
+        {
+            var retornoArquivos = Directory.GetFiles(caminho, "*", SearchOption.AllDirectories);
+
+            foreach (var retorno in retornoArquivos)
+            {
+                Console.WriteLine(retorno);
+            }
+        }
+
+ master
     }
 }
