@@ -14,5 +14,15 @@ namespace ManipulandoArquivos.Helper
                 Console.WriteLine(retorno);
             }
         }
+        public void ListarAquivos(string caminho)
+        {
+            var retornoArquivos = Directory.GetFiles(caminho, "*", SearchOption.AllDirectories);
+
+            foreach (var retorno in retornoArquivos)
+            {
+                Console.WriteLine(retorno);
+            }
+        }
+
     }
 }
