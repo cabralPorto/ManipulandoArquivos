@@ -23,6 +23,10 @@ namespace ManipulandoArquivos.Helper
                 Console.WriteLine(retorno);
             }
         }
+        public void ApagarDiretorio(string caminho, bool apagarArquivos)
+        {
+            Directory.Delete(caminho, apagarArquivos);
+        }
 
     }
 }
