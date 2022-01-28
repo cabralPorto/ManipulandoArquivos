@@ -1,5 +1,6 @@
 ﻿using ManipulandoArquivos.Helper;
 using System;
+using System.IO;
 
 namespace ManipulandoArquivos
 {
@@ -11,7 +12,13 @@ namespace ManipulandoArquivos
 
             FileHelper helper = new FileHelper();
 
-            helper.ListarDiretorio(caminho);
+            // helper.ListarDiretorio(caminho);
+
+            var caminhoPathCombine = Path.Combine(caminho, "Pasta Teste 3", "SubPastaTeste3");
+
+            Console.WriteLine("Criando Diretório: " + caminhoPathCombine);
+            
+            helper.CriarDiretorio(caminhoPathCombine);
         }
     }
 }
