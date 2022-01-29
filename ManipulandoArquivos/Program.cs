@@ -41,7 +41,9 @@ namespace ManipulandoArquivos
 
             //helper.MoverArquivo(caminhoArquivo, NovocaminhoArquivo, false);
 
-            helper.CopiarArquivo(caminhoArquivoTeste, caminhoArquivoTesteCopia, false);
+            //helper.CopiarArquivo(caminhoArquivoTeste, caminhoArquivoTesteCopia, false);
+
+            helper.DeletarArquivo(caminhoArquivoTesteCopia);
 
         }
     }

@@ -98,6 +98,12 @@ namespace ManipulandoArquivos.Helper
         {
             File.Copy(caminho, novoCaminho, sobrescrever);
         }
+        public void DeletarArquivo(string caminho)
+        {
+            File.Delete(caminho);
+        }
     }
+
+
 
 }
